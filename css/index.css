@@ -1,0 +1,105 @@
+/* Estilos para la cabecera */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #003366; /* Azul marino */
+    padding: 10px 20px;
+    color: white;
+    align-items: center;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0;
+}
+
+/* Estilo para los contenedores de los títulos y los íconos del corazón */
+article div {
+    display: flex;
+    align-items: center;  /* Centra verticalmente el texto y el ícono */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    gap: 10px; /* Espacio entre el texto y el ícono */
+}
+
+/* Estilo para el título de la foto */
+article h3 {
+    margin: 100; /* Elimina los márgenes por defecto */
+    font-size: 18px;
+}
+
+/* Estilo para el ícono del corazón */
+article i.fa-heart {
+    font-size: 20px; /* Ajusta el tamaño del ícono */
+    cursor: pointer; /* Cambia el cursor cuando pasa sobre el corazón */
+}
+
+/* Estilos para los artículos */
+article {
+    width: 30%;
+    margin: 10px;
+}
+
+article img {
+    width: 100%;
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+/* Sección de fotos */
+#seccionFotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+/* Contenedor de imágenes */
+.contenedorImg {
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 1200px) {
+    article {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Aseguramos que en dispositivos móviles los artículos tengan un 100% de ancho */
+    article {
+        width: 100%;
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    #logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Estilo adicional para el hover de los corazones */
+i.fa-heart {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+i.fa-heart:hover {
+    color: red; /* Cambio de color del corazón al pasar el cursor */
+}
+
